@@ -1,0 +1,14 @@
+import math
+def maxDifference(A):
+	mi=0
+	ma=0
+	su=0
+	s=0 
+	while len(A) > 1:
+		ma=max(A)
+		mi=min(A) 
+		su=ma-mi
+		A.remove(ma)
+		A.remove(mi)
+		s+=su
+	return s 
